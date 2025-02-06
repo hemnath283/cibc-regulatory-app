@@ -8,7 +8,8 @@ from wordcloud import WordCloud
 import datetime
 
 # Set up the AWS session
-session = boto3.Session(profile_name='hackathon-participant-418272756489')
+session = boto3.Session()
+# session = boto3.Session(profile_name='hackathon-participant-418272756489')
 s3_client = session.client("s3")
 
 # S3 Bucket and Folder Paths
